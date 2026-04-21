@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/runkids/skillshare/main/schemas/config.schema.json
+source: /home/ron/.config/skillshare/skills
+extras_source: /home/ron/.config/skillshare/extras
+mode: merge
+targets:
+  claude:
+    skills:
+      path: /home/ron/.claude/skills
+  cline:
+    skills:
+      path: /home/ron/.agents/skills
+  codex:
+    skills:
+      path: /home/ron/.codex/skills
+  copilot:
+    skills:
+      path: /home/ron/.copilot/skills
+  gemini:
+    skills:
+      path: /home/ron/.gemini/skills
+  opencode:
+    skills:
+      path: /home/ron/.config/opencode/skills
+  universal:
+    skills:
+      path: /home/ron/.agents/skills
+  warp:
+    skills:
+      path: /home/ron/.agents/skills
+  witsy:
+    skills:
+      path: /home/ron/.agents/skills
+ignore:
+  - '**/.DS_Store'
+  - '**/.git/**'
+audit:
+  block_threshold: CRITICAL
